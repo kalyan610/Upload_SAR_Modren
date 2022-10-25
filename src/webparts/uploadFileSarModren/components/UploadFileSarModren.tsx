@@ -168,10 +168,10 @@ this.GetAllApplications();
       alert('please select Deadline for submission');
     }
 
-    else if(this.state.dtreqdate>mycurrentdate)
+    else if(this.state.dtreqdate<mycurrentdate)
     {
 
-      alert('Submission date should be less than current date');
+      alert('Submission date should be greater than current date');
 
     }
 
