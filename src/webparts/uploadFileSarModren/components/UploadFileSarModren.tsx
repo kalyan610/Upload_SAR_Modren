@@ -140,6 +140,8 @@ this.GetAllApplications();
     }
     private OnBtnClick():void{
 
+      const mycurrentdate = new Date();
+
     
     if (this.state.MyQuarterValue == null || this.state.MyQuarterValue == 'Select Quarter') {
 
@@ -165,6 +167,15 @@ this.GetAllApplications();
 
       alert('please select Deadline for submission');
     }
+
+    else if(this.state.dtreqdate>mycurrentdate)
+    {
+
+      alert('Submission date should be less than current date');
+
+    }
+
+    
 
     else
     {
